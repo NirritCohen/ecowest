@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -7,10 +6,27 @@
   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/blasten/turn.js@4/turn.min.js"></script>
   <style>
-    body { background: #eee; margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; }
-    #flipbook { width: 960px; height: 600px; }
-    #flipbook .page { width: 480px; height: 600px; }
-    #flipbook .page img { width: 100%; height: 100%; object-fit: contain; }
+    body {
+      background: #eee;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #flipbook {
+      width: 960px;
+      height: 600px;
+    }
+    #flipbook .page {
+      width: 480px;
+      height: 600px;
+    }
+    #flipbook .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
@@ -30,8 +46,8 @@
     <div class="page"><img src="page_13.jpg"></div>
     <div class="page"><img src="page_14.jpg"></div>
     <div class="page"><img src="page_15.jpg"></div>
-
   </div>
+
   <script>
     $('#flipbook').turn({
       width: 960,
