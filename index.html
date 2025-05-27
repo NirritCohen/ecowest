@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <title>חוברת דיגיטלית עם דפדוף</title>
+  <title>e_waste_NB</title>
   <script src="js/jquery.min.js"></script>
   <script src="js/turn.min.js"></script>
   <style>
@@ -23,6 +23,7 @@
     .page {
       width: 480px;
       height: 600px;
+      background: white;
     }
     .page img {
       width: 100%;
@@ -32,6 +33,7 @@
   </style>
 </head>
 <body>
+
   <div id="flipbook">
     <div class="page"><img src="images/page_1.jpg" alt="Page 1"></div>
     <div class="page"><img src="images/page_2.jpg" alt="Page 2"></div>
@@ -49,6 +51,7 @@
     <div class="page"><img src="images/page_14.jpg" alt="Page 14"></div>
     <div class="page"><img src="images/page_15.jpg" alt="Page 15"></div>
   </div>
+
   <script>
     $(document).ready(function(){
       $('#flipbook').turn({
@@ -56,9 +59,12 @@
         height: 600,
         autoCenter: true,
         elevation: 50,
-        gradients: true
+        gradients: true,
+        display: 'double',
+        acceleration: true
       });
     });
   </script>
+
 </body>
 </html>
